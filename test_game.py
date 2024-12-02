@@ -13,7 +13,7 @@ class TestGame(unittest.TestCase):
         self.assertTrue(result)
         mock_randint.assert_called_once_with(1, 10)  # Überprüft, dass random.randint korrekt aufgerufen wurde
 
-    @patch("builtins.input", side_effect=["1", "2", "3"])  # Mocke die Eingabe
+    @patch("builtins.input", side_effect=["1", "2", "7"])  # Mocke die Eingabe
     @patch("random.randint", return_value=5)                 # Mocke die Zufallszahl
     def test_guess_number_fail(self, mock_randint, mock_input):
         # Teste, dass der Spieler das falsche Ergebnis bekommt
