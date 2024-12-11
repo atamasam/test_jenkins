@@ -5,7 +5,7 @@ def guess_number():
     print("Welcome to the Guess-the-Number Game!")
     print("I'm thinking of a number between 1 and 10.")
 
-    for _ in range(3):  # Spieler hat 3 Versuche
+    for _ in range(3):  # The player has 3 attempts
         try:
             guess = int(input("Take a guess: "))
             if guess == number_to_guess:
