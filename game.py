@@ -1,7 +1,7 @@
 import random
 
 def guess_number():
-    number_to_guess = random.randint(1, 10)
+    number_to_guess = random.randint(1, 99)
     print("Welcome to the Guess-the-Number Game!")
     print("I'm thinking of a number between 1 and 10.")
 
